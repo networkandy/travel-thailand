@@ -1,0 +1,538 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+header {
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+    background: url('/img/thai-temple.jpg') no-repeat center center/cover;
+}
+
+video {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.header-content {
+    z-index: 10;
+    position: absolute;
+    top: 30%;
+    left: 20px;
+    width: 50%;
+    color: yellow;
+    
+}
+
+.header-content h1 {
+    font-size: 50px;
+    text-shadow: 2px 2px black;
+}
+
+.header-content p {
+    font-size: 24px;
+    text-shadow: 2px 2px black;
+}
+
+.header-content a {
+    font-size: 20px;
+    background: white;
+    padding: 10px;
+    border-radius: 25px;
+    transition: all 0.5s ease-in-out;
+}
+
+.header-content a:hover {
+    background: lightskyblue;
+    color: white;
+}
+
+.header-content .social  {
+    display: flex;
+    flex-direction: row;
+    padding: 0 5px 0 5px;
+    margin-top: 80px;
+    color: white;
+}
+
+.header-content .social img {
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    margin-right: 15px;
+    background: white;
+    border-radius: 5px;
+}
+
+
+
+@media(max-width: 1030px){
+    .header-content h1 {
+        display: none;
+    }
+
+    header {
+        height: auto;
+    }
+
+    .header-content h1 {
+        font-size: 3rem;
+    }
+
+    .header-content p {
+        display: none;
+    }
+    
+    .header-content a {
+        display: none;
+    }
+
+    
+    .header-content .social  {
+        display: none;
+
+    }
+}
+
+
+/* About Page */
+#about {
+    width: 100%;
+    height: 100%;
+    background: #F2F4F4;
+}
+
+
+.about h2 {
+    text-align: center;
+    color: yellow;
+    text-shadow: 2px 2px black;
+}
+
+.about .row {
+    padding: 30px;
+}
+
+
+
+.about .about-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 25px;
+    border-radius: 50%;
+}
+
+
+
+.about .about-details {
+    display: block;
+    margin: 25px;
+    font-size: 1.5rem;
+    
+}
+/* End About Page */
+
+
+
+/* What we do */
+.what-we-do {
+    background: url('/img/martini-sand.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+}
+
+.what-we-do  h1 {
+    text-align: center;
+    color: yellow;
+    text-shadow: 2px 2px black;
+    padding: 25px;
+}
+
+.inner-what {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-end;
+    padding: 30px;
+    text-align: center;
+}
+
+.what-item {
+    background: rgba(255, 255, 255,0.5);
+    height: 300px;
+    width: 250px;
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+
+
+/*End  What we do */
+
+
+
+/*  Where We Take You */
+.where {
+    height: 100%;
+    width: 100%;
+    background: #F2F4F4;
+}
+
+.where h1 {
+    text-align: center;
+    padding: 30px;
+    color: yellow;
+    text-shadow: 2px 2px black;
+}
+
+.inner-where {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap:  wrap;
+    justify-content: center;
+}
+
+.inner-where .spots {
+    width: 400px;
+    height: 350px;
+    margin: 15px;
+    border-radius: 5px;
+    overflow: hidden;
+    perspective: 1;
+ }
+
+ .spots h4 {
+    width: 100%;
+    background: lightgray;
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+/* End  Where We Take You */
+
+
+
+/*  Testimonials */
+.testimonials {
+    width: 100%;
+    height: 100%;
+    background: url('/img/coast.jpg') no-repeat center center/ cover;
+}
+
+.testimonials h1 {
+    text-align: center;
+    padding: 30px;
+    color: yellow;
+    text-shadow: 2px 2px black;
+}
+
+.review-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column ;
+
+}
+
+.review-container .review {
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+.review-container .review img {
+    display: block;
+    margin: 0 auto;
+    height: 75px;
+    width: 75px;
+    margin-top: 25px;
+}
+
+.review-container .review .inner-review {
+    width: 80%;
+    height: 100%;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+/*  End Testimonials */
+
+
+/* Price */
+
+    .price{
+        width: 100%;
+        height: 100%;
+    }
+
+    .price h1 {
+        text-align: center;
+        color: yellow;
+        text-shadow: 2px 2px black;
+        padding: 30px;
+    }
+
+    .price-container {
+        display: flex;
+        flex-flow: row wrap;
+        padding: 20px 0 40px 0;
+    }
+
+    .price-container .price-card {
+        margin-bottom: 20px;
+    }
+
+    .price-container .price-card .silver {
+        color: silver;
+    }
+
+    .price-container .price-card .gold {
+        color: gold;
+    }
+/* End Price */
+
+
+
+/* Contact Us */
+
+.contact {
+    width: 100%;
+    height: 100%;
+    background: url('/img/Thailand-hero.jpg') no-repeat center center/ cover;
+    background-attachment: fixed;
+}
+
+.contact  h1 {
+    text-align: center;
+    padding: 25px;
+    color: yellow;
+    text-shadow: 2px 2px black;
+}
+
+.contact-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.contact-container form {
+    width: 375px;
+    height: 100%;
+    padding: 20px;
+}
+
+.contact-container form label {
+    color: white;
+    text-shadow: 2px 2px black;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+.contact-container form input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+} 
+
+.contact-container form input:focus {
+    outline-color: white;
+}
+
+.contact-container form textarea {
+    height: 250px;
+    width: 100%;
+    margin: 15px 0 8px 0;
+    background: transparent;
+    border: 1px white solid;
+    border-bottom: 2px solid white;
+}
+
+.contact-container form textarea:focus{
+    outline-color: white;
+}
+
+.contact-container form input[type="submit"]{
+    background: white;
+    border-radius: 5px;
+    padding: 2px;
+    font-weight: 800;
+    color: black;
+}
+
+.contact-container form input[type="submit"]:hover{
+    background: yellow;
+    transition: all 0.5s ease-in-out;
+}
+
+
+
+.contact-container .contact-social{
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    text-shadow: 2px 2px black;
+}
+
+.contact-social ul {
+    list-style: none;
+}
+
+.contact-social ul li:hover {
+    color: yellow;
+}
+/* End Contact Us */
+
+
+/* modal */
+
+.pop-modal {
+    visibility: hidden;
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    /* padding: 50px; */
+    z-index: 10;
+    /* transition: all .4s ease-in-out; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.showModal {
+    visibility: visible;
+}
+
+
+
+.modal-container {
+    background: white;
+    height: 80%;
+    width: 400px;
+    /* position: absolute;
+    top: 1%;
+    bottom: 0;
+    right: 0;
+    left: 30%; */
+    /* padding: 15px; */
+    border-radius: 5px;
+    overflow: scroll;
+   
+}
+
+.form-inner {
+    padding: 10px;
+}
+
+
+@media (max-width: 400px){
+    .modal-container {
+
+        width: 300px;
+        position: absolute;
+        top: 1%;
+        bottom: 0;
+        right: 0;
+        left: 10%;
+
+        overflow: scroll;
+    }
+}
+
+
+/* Slider */
+.slider {
+    visibility: hidden;
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    /* padding: 50px; */
+    z-index: 10;
+    /* transition: all .4s ease-in-out; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.showSlider {
+    visibility: visible;
+}
+
+
+.slider .img-slider {
+    height: 450px;
+    width: 600px;
+    background-image: ;
+    background-size: cover;
+}
+
+.slider .img-slider h1 {
+    color: red;
+    text-align: right;
+    margin: 0;
+    cursor: pointer;
+}
+
+.slider .left, .slider .right {
+    position: absolute;
+    color: white;
+    top: 40%;
+    cursor: pointer;
+}
+
+.slider .left {
+    left: 10%;
+}
+
+.slider .left:hover {
+    color: red;
+}
+
+.slider .right {
+    right: 10%;
+}
+
+.slider .right:hover {
+    color: red;
+}
+
+
+@media(max-width: 400px){
+    .slider .img-slider {
+        width: 100%;
+    }
+
+    .slider .left {
+        left: 0;
+    }
+    
+    
+    .slider .right {
+        right: 0;
+    }
+}
+/* End Slider */
